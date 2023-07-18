@@ -14,6 +14,10 @@ I'm using the ESP32S2 on a solderless breadboard and the Arduino IDE for testing
 ### Modifications to the Code
 
 * using 115200 baud rate which is more typical for the ESP32 board
+* simplified code from keypad_config.h and then moved the simplified content directly into **keypad0.ino**
+    * with the simplified code there was no need for separate files
+    * the example header file had definitions that I thought should be in a ino file. 
+      Moving the definitions into the ino file resolves that issue.
 * reversed the order of the GPIO pins so that the keybad flex PCB cable would
    not pass over the board when connected and top side of keypad could be 
    kept print side up.
