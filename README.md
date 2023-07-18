@@ -32,3 +32,15 @@ I'm using the ESP32S2 on a solderless breadboard and the Arduino IDE for testing
 ## Installing Adafruit Keyboard Library
 
 The procedure for installing the library is given here https://learn.adafruit.com/matrix-keypad/arduino 
+
+
+## The Following is Verbatim from [Adafruit Library](https://github.com/adafruit/Adafruit_Keypad/tree/master)
+
+# Adafruit Keypad Library 
+
+This is a library for using diode multiplexed keypads with GPIO pins on Arduino.
+
+Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
+
+Written by Dean Miller for Adafruit Industries.
+MIT license, all text above must be included in any redistribution
