@@ -33,23 +33,5 @@ byte colPins[COLS] = {C1, C2, C3}; // connect to the column pinouts of the
                                    // keypad
 
 //initialize an instance of class NewKeypad
-Adafruit_Keypad customKeypad = Adafruit_Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS);
+Adafruit_Keypad Keypad419 = Adafruit_Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
-void setup() {
-  Serial.begin(115200);   // will compile for a ESP32S2 which generally is set to 115200
-  customKeypad.begin();
-}
-
-void loop() {
-
-  customKeypad.tick();
-
-  while(customKeypad.available()){
-    keypadEvent e = customKeypad.read();
-    Serial.print((char)e.bit.KEY);
-    if(e.bit.EVENT == KEY_JUST_PRESSED) Serial.println(" pressed");
-    else if(e.bit.EVENT == KEY_JUST_RELEASED) Serial.println(" released");
-  }
-
-  delay(10);
-}
