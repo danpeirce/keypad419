@@ -7,6 +7,7 @@
 // note moved simplified keyboard_config.h into the this ino file 
 
 #include "Adafruit_Keypad.h"
+#include "keypad914.h"
 
 // define your specific keypad here via PID
 #define KEYPAD_PID419
