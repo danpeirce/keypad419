@@ -19,9 +19,7 @@ void loop() {
 
   while(Keypad419.available()){
     keypadEvent e = Keypad419.read();
-    Serial.print((char)e.bit.KEY);
-    if(e.bit.EVENT == KEY_JUST_PRESSED) Serial.println(" pressed");
-    else if(e.bit.EVENT == KEY_JUST_RELEASED) Serial.println(" released");
+    if(e.bit.EVENT == KEY_JUST_PRESSED) Serial.print((char)e.bit.KEY);
   }
 
   delay(10);
